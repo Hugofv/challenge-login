@@ -1,7 +1,7 @@
 # [Challenge Login] Front End React
 
 # Live Demo
-- Live demo está disponível em [Challenge Login](https://react-flash-card.herokuapp.com)
+- Live demo está disponível em [Challenge Login](https://challenge-login.herokuapp.com/)
 ## Requisitos
 
 Node.js [10.16.0](https://nodejs.org/dist/v10.16.0)\
