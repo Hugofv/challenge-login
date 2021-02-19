@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  position: relative;
+`;
+
 export const BackgroundImage = styled.div`
   background-image: url('../../assets/img/background.jpg');
   background-size: 100%;

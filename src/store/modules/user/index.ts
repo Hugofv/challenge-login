@@ -1,11 +1,14 @@
-import {Reducer} from 'redux';
-import {UserState, UserTypes} from './types';
+import { Reducer } from 'redux';
+import { UserState, UserTypes } from './types';
 
 const INITIAL_STATE: UserState = {
   data: [],
   currentUser: {
     name: '',
     password: '',
+    id: '',
+    email: '',
+    createdAt: '',
   },
   error: false,
   loading: false,
@@ -14,7 +17,7 @@ const INITIAL_STATE: UserState = {
 const reducer: Reducer<UserState> = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case UserTypes.LOGIN_REQUEST:
-      return {...state, loading: true};
+      return { ...state, loading: true };
     case UserTypes.LOGIN_SUCCESS:
       return {
         ...state,

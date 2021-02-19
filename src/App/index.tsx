@@ -1,12 +1,15 @@
 import React from 'react';
-import Login from '../Containers/Login';
+import { ToastProvider } from 'react-toast-notifications';
 import GlobalStyle from './GlobalStyle';
+import Routes from './Routes';
 
 const App: React.FC = () => {
   return (
     <>
-      <Login />
-      <GlobalStyle/>
+      <ToastProvider>
+        <Routes />
+        <GlobalStyle />
+      </ToastProvider>
     </>
   );
 };
